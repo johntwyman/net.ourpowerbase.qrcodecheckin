@@ -1,42 +1,41 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'name' => 'progressivetech/net.ourpowerbase.qrcodecheckin',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '58b53bab937eedfdbc6bb8b8ba6ae4872abc05e2',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
     ),
-    'reference' => '7d58f9fafa320c3416f460a24a6275c68d5dc505',
-    'name' => 'progressivetech/net.ourpowerbase.qrcodecheckin',
-  ),
-  'versions' => 
-  array (
-    'chillerlan/php-qrcode' => 
-    array (
-      'pretty_version' => '3.4.0',
-      'version' => '3.4.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'd8bf297e6843a53aeaa8f3285ce04fc349d133d6',
+    'versions' => array(
+        'chillerlan/php-qrcode' => array(
+            'pretty_version' => '5.0.5',
+            'version' => '5.0.5.0',
+            'reference' => '7b66282572fc14075c0507d74d9837dab25b38d6',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../chillerlan/php-qrcode',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'chillerlan/php-settings-container' => array(
+            'pretty_version' => '3.3.0',
+            'version' => '3.3.0.0',
+            'reference' => 'a0a487cbf5344f721eb504bf0f59bada40c381b7',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../chillerlan/php-settings-container',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'progressivetech/net.ourpowerbase.qrcodecheckin' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '58b53bab937eedfdbc6bb8b8ba6ae4872abc05e2',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
     ),
-    'chillerlan/php-settings-container' => 
-    array (
-      'pretty_version' => '1.2.1',
-      'version' => '1.2.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'b9b0431dffd74102ee92348a63b4c33fc8ba639b',
-    ),
-    'progressivetech/net.ourpowerbase.qrcodecheckin' => 
-    array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '7d58f9fafa320c3416f460a24a6275c68d5dc505',
-    ),
-  ),
 );

@@ -89,6 +89,7 @@ class CRM_Qrcodecheckin_ExtensionUtil {
 
 use CRM_Qrcodecheckin_ExtensionUtil as E;
 
+pathload()->addSearchDir(__DIR__ . '/mixin/lib');
 spl_autoload_register('_qrcodecheckin_civix_class_loader', TRUE, TRUE);
 
 function _qrcodecheckin_civix_class_loader($class) {
