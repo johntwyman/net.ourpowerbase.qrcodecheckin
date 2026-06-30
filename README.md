@@ -106,7 +106,7 @@ function myextension_civicrm_qrcodecheckin_tokenValues(&$values, $contact_id, &$
       $value = $link;
     }
     else {
-      $value = '<p><img alt="QR Code with participant details" src="' . $link . '">Overirrden HTML</p>';
+      $value = '<p><img alt="QR Code with participant details" src="' . $link . '">Overidden HTML</p>';
     }
   }
   // If we handled the generation of the QRCode and URL set $handled=TRUE
@@ -114,6 +114,14 @@ function myextension_civicrm_qrcodecheckin_tokenValues(&$values, $contact_id, &$
 }
 ```
 
+## Cleaning up old images
+
+The extension ships with an APIv3 method `Qrcodecheckin.cleanupimages` which can be used to remove genereated QR code images
+from the filesystem. Invoked "as is" it defaults to finding and removing images related to events whose end dates are more
+than 30 days in the past. The method supports a single integer parameter to change the number of days in the past used
+when looking for old images.
+
+A Scheduled Job is also created on installation which can be used to run the cleanup task daily. It is disabled by default.
 
 ## Requirements
 
