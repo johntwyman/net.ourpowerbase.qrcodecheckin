@@ -187,8 +187,8 @@ function qrcodecheckin_get_image_data($url, $base64 = TRUE) {
   require_once __DIR__ . '/vendor/autoload.php';
   $options = new chillerlan\QRCode\QROptions(
     [
-      'outputType' => chillerlan\QRCode\QRCode::OUTPUT_IMAGE_PNG,
-      'imageBase64' => $base64,
+      'outputType' => chillerlan\QRCode\Output\QROutputInterface::GDIMAGE_PNG,
+      'outputBase64' => $base64,
       'imageTransparent' => FALSE,
     ]
   );
